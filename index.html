@@ -3,22 +3,72 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lumo</title>
+<title>Lumo — Reading Without Borders</title>
+<meta name="description" content="Lumo is a warm bilingual (Chinese–English) leveled reading app for children and families, built on the world's public-domain stories.">
 <style>
-  :root { --cream:#F4EEE2; --ink:#4A4034; --mute:#7C756A; --title:#4E3F6E; --brand:#5B4A86; }
-  body { margin:0; background:var(--cream); color:var(--ink); font:16px/1.75 -apple-system, "Segoe UI", "PingFang TC", sans-serif; display:flex; min-height:100vh; align-items:center; justify-content:center; }
-  .card { text-align:center; padding:40px; }
-  h1 { color:var(--title); font-family:Georgia, serif; font-size:44px; margin:0; }
-  p { color:var(--mute); margin:6px 0 26px; }
-  a { display:inline-block; margin:6px 10px; color:var(--brand); font-weight:600; }
+  :root { --cream:#F4EEE2; --ink:#4A4034; --mute:#7C756A; --title:#4E3F6E; --brand:#5B4A86; --brandsoft:#EBE6F2; --line:#E8E1D2; }
+  body { margin:0; background:var(--cream); color:var(--ink); font:16px/1.75 -apple-system, "Segoe UI", "PingFang TC", "Noto Sans TC", sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:56px 24px 72px; }
+  .hero { text-align:center; }
+  .logo { width:64px; height:64px; border-radius:18px; background:var(--brandsoft); display:inline-flex; align-items:center; justify-content:center; font-size:30px; }
+  h1 { color:var(--title); font-family:Georgia, "Times New Roman", serif; font-size:44px; margin:14px 0 2px; }
+  .tag { color:var(--brand); font-size:18px; margin:0; }
+  .lead { color:var(--mute); max-width:520px; margin:16px auto 0; }
+  nav { margin-top:22px; }
+  nav a { display:inline-block; margin:6px 10px; color:var(--brand); font-weight:600; }
+  h2 { color:var(--brand); font-size:20px; margin:40px 0 12px; }
+  .grid { display:grid; grid-template-columns:1fr; gap:14px; }
+  @media(min-width:560px){ .grid { grid-template-columns:1fr 1fr; } }
+  .card { background:#fff; border:1px solid var(--line); border-radius:16px; padding:18px 20px; }
+  .card h3 { color:var(--brand); margin:0 0 6px; font-size:16px; }
+  .card p { margin:0; color:var(--mute); font-size:14px; line-height:1.6; }
+  .zh { margin-top:8px; }
+  .foot { margin-top:52px; padding-top:22px; border-top:1px solid var(--line); text-align:center; color:var(--mute); font-size:14px; }
+  .foot a { color:var(--brand); }
 </style>
 </head>
 <body>
-  <div class="card">
+<div class="wrap">
+  <div class="hero">
+    <div class="logo">📖</div>
     <h1>Lumo</h1>
-    <p>Reading without borders · 閱讀無國界</p>
-    <a href="./privacy.html">Privacy Policy 隱私政策</a>
-    <a href="./support.html">Support 支援</a>
+    <p class="tag">Reading Without Borders · 閱讀無國界</p>
+    <p class="lead">A warm, bilingual (Chinese&nbsp;⇄&nbsp;English) leveled reading app for children, families, and language learners — built on the world's public-domain stories.<br><br>為孩子、家庭與語言學習者打造的溫暖雙語分級閱讀 App,取材自世界公版經典。</p>
+    <nav>
+      <a href="./support.html">Support 支援</a>
+      <a href="./privacy.html">Privacy Policy 隱私政策</a>
+      <a href="mailto:erin.wu119@outlook.com">Contact 聯絡</a>
+    </nav>
   </div>
+
+  <h2>What's inside · 內容特色</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Bilingual leveled reading</h3>
+      <p>80+ public-domain books, each in Chinese &amp; English across four reading levels.</p>
+      <p class="zh">80+ 本公版書,中英雙語 × 四個閱讀程度。</p>
+    </div>
+    <div class="card">
+      <h3>Pinyin &amp; word help</h3>
+      <p>Verified pinyin, keyword explanations, and gentle comprehension checks.</p>
+      <p class="zh">驗證拼音、詞語解釋、溫和的理解檢查。</p>
+    </div>
+    <div class="card">
+      <h3>AI Reading Adapter</h3>
+      <p>Paste or upload your own text to translate and adapt it to a reading level.</p>
+      <p class="zh">貼上或上傳你的文字,翻譯並改寫成合適程度。</p>
+    </div>
+    <div class="card">
+      <h3>Gentle, earned rewards</h3>
+      <p>Streaks, companions, and a cozy Reading Nest — earned by real reading. No ads, no loot boxes.</p>
+      <p class="zh">連續閱讀、夥伴、溫馨小屋 —— 靠真實閱讀獲得。無廣告、無開箱。</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    © 2026 Lumo · Reading Without Borders<br>
+    <a href="./support.html">Support</a> · <a href="./privacy.html">Privacy</a>
+  </div>
+</div>
 </body>
 </html>
